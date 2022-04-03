@@ -1,0 +1,44 @@
+html, 
+body {
+    height: 100%;
+}
+body {
+    background-color: #121213;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+label {
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 24px;
+}
+input {
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+}
+button {
+    background-color: #818384;
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 12px auto;
+    height: 58px;
+    font-weight: bold;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.alert {
+    color: #f5793a;
+}
+.hide {
+    display: none;
+}
+.available {
+    color: #538d4e;
+}
