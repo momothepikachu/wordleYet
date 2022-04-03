@@ -1,5 +1,5 @@
-import { words, all } from './dict.js';
-
+import { words, legal } from './dict.js';
+const all = [...words, ...legal]
 //get the words that have been guessed
 const totalWords = words.length;
 const firstDay = new Date('6/19/2021') //launch date of wordle 6/19/2021
@@ -19,8 +19,8 @@ function hideMsg(){
     message.className = 'message hide'
 }
 function checkHistory(e){
-    if(e.key!=='Enter') return;
-    const value = wordInput.value;
+    if(e.type==='keypress' && e.key!=='Enter') return;
+    const value = wordInput.value.toLowerCase();
     message.className = 'message alert'
     if(value.length<5){
         message.innerText = 'Need to be a 5-letter word'
