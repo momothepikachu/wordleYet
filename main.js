@@ -1,5 +1,6 @@
 import { words, legal } from './dict.js';
 const all = [...words, ...legal]
+
 //get the words that have been guessed
 const totalWords = words.length;
 const firstDay = new Date('6/19/2021') //launch date of wordle 6/19/2021
@@ -8,6 +9,13 @@ const differenceInTime = today.getTime() - firstDay.getTime()
 const differenceInDays = differenceInTime / (1000 * 3600 * 24);
 const wordEnd = differenceInDays % totalWords;
 const wordsHaveGuessed = words.slice(0, wordEnd)
+
+//if loaded on mobile, won't center vertically
+window.onload = () => {
+    if(window.innerWidth<560){
+        document.body.classList.remove('center');
+    }
+};
 
 const checkHistoryBtn = document.querySelector('.checkHistory')
 const wordInput = document.querySelector('.word')

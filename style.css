@@ -7,8 +7,12 @@ body {
     font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 54px;
     align-items: center;    
+}
+.center {
+    justify-content: center;
+    margin-top: unset;
 }
 label {
     color: #ffffff;
