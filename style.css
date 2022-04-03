@@ -14,6 +14,7 @@ label {
     color: #ffffff;
     line-height: 50px;
     font-size: 24px;
+    text-align: center;
 }
 input {
     display: block;
@@ -21,6 +22,7 @@ input {
     font-size: 24px;
     text-align: center;
     padding: 5px;
+    text-transform: uppercase
 }
 button {
     background-color: #818384;
