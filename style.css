@@ -12,13 +12,12 @@ body {
 }
 label {
     color: #ffffff;
-    line-height: 50px;
     font-size: 24px;
     text-align: center;
 }
 input {
     display: block;
-    margin: auto;
+    margin: 12px auto 0;
     font-size: 24px;
     text-align: center;
     padding: 5px;
