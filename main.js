@@ -10,13 +10,6 @@ const differenceInDays = differenceInTime / (1000 * 3600 * 24);
 const wordEnd = differenceInDays % totalWords;
 const wordsHaveGuessed = words.slice(0, wordEnd)
 
-//if loaded on mobile, won't center vertically
-window.onload = () => {
-    if(window.innerWidth<560){
-        document.body.classList.remove('center');
-    }
-};
-
 const checkHistoryBtn = document.querySelector('.checkHistory')
 const wordInput = document.querySelector('.word')
 const message = document.querySelector('.message')

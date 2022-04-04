@@ -10,9 +10,13 @@ body {
     margin-top: 54px;
     align-items: center;    
 }
-.center {
-    justify-content: center;
-    margin-top: unset;
+
+/* if loaded on mobile, won't center vertically */
+@media only screen and (min-width: 600px) {
+    body {
+        justify-content: center;
+        margin-top: unset;
+    }
 }
 label {
     color: #ffffff;
